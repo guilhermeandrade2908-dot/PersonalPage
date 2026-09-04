@@ -1,150 +1,784 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Personal</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal pega no meu pau</title>
+    <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
 
-<body>
+    <!-- PHOSPHOR ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+
+  <body class="bg-white">
     <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 w-full bg-black text-white z-50">
-        <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <a href="#inicio" class="text-xl font-bold"> Guilherme Personal </a>
 
-            <a href="#inicio" class="text-xl font-bold">
-                Guilherme Personal
-            </a>
+        <div class="hidden md:flex ml-auto">
+          <ul class="flex items-center gap-6">
+            <li>
+              <a
+                href="#inicio"
+                class="text-white hover:text-gray-300 transition"
+              >
+                Início
+              </a>
+            </li>
 
-            <div class="hidden md:flex ml-auto">
-                <ul class="flex items-center gap-6">
-                    <li>
-                        <a href="#inicio" class="text-white hover:text-gray-300 transition">
-                            Início
-                        </a>
-                    </li>
+            <li>
+              <a
+                href="#sobre"
+                class="text-white hover:text-gray-300 transition"
+              >
+                Sobre Mim
+              </a>
+            </li>
 
-                    <li>
-                        <a href="#sobre" class="text-white hover:text-gray-300 transition">
-                            Sobre Mim
-                        </a>
-                    </li>
+            <li>
+              <a
+                href="#metodo"
+                class="text-white hover:text-gray-300 transition"
+              >
+                Método
+              </a>
+            </li>
 
-                    <li>
-                        <a href="#projetos" class="text-white hover:text-gray-300 transition">
-                            Projetos
-                        </a>
-                    </li>
+            <li>
+              <a
+                href="#planos"
+                class="text-white hover:text-gray-300 transition"
+              >
+                Planos
+              </a>
+            </li>
 
-                    <li>
-                        <a href="#habilidades" class="text-white hover:text-gray-300 transition">
-                            Habilidades
-                        </a>
-                    </li>
+            <li>
+              <a
+                href="#resultados"
+                class="text-white hover:text-gray-300 transition"
+              >
+                Resultados
+              </a>
+            </li>
 
-                    <li>
-                        <a href="#experiencia" class="text-white hover:text-gray-300 transition">
-                            Experiência
-                        </a>
-                    </li>
+            <li>
+              <a href="#faq" class="text-white hover:text-gray-300 transition">
+                FAQ
+              </a>
+            </li>
 
-                    <li>
-                        <a href="#contato" class="text-white hover:text-gray-300 transition">
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Botão do menu mobile -->
-            <button class="md:hidden text-white text-2xl" type="button">
-                ☰
-            </button>
-
+            <li>
+              <a
+                href="#contato"
+                class="rounded-lg bg-white px-4 py-2 font-semibold text-black transition hover:bg-gray-200"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <!-- Botão do menu mobile -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-white text-2xl"
+          type="button"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+
+      <!-- Menu mobile -->
+      <div
+        id="menu-mobile"
+        class="hidden md:hidden bg-black border-t border-gray-800"
+      >
+        <ul class="flex flex-col px-4 py-4 gap-4">
+          <li><a href="#inicio" class="block text-white">Início</a></li>
+          <li><a href="#sobre" class="block text-white">Sobre Mim</a></li>
+          <li><a href="#metodo" class="block text-white">Método</a></li>
+          <li><a href="#planos" class="block text-white">Planos</a></li>
+          <li><a href="#resultados" class="block text-white">Resultados</a></li>
+          <li><a href="#faq" class="block text-white">FAQ</a></li>
+          <li>
+            <a
+              href="#contato"
+              class="inline-block rounded-lg bg-white px-4 py-2 font-semibold text-black"
+            >
+              Contato
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- HERO -->
     <section id="inicio" class="min-h-screen bg-black text-white">
+      <div class="container mx-auto px-6 py-24">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Conteúdo -->
+          <div class="w-full md:w-1/2">
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+            >
+              Personal Trainer
+            </p>
 
-        <div class="container mx-auto px-6 py-24">
+            <h1 class="mt-4 text-5xl md:text-6xl font-bold leading-tight">
+              Transforme seu corpo.
+              <span class="text-gray-400"> Supere seus limites. </span>
+            </h1>
 
-            <div class="flex flex-col md:flex-row items-center gap-12">
+            <p class="mt-6 text-lg text-gray-300 max-w-lg">
+              Treinamento personalizado para ajudar você a alcançar seus
+              objetivos e construir uma rotina mais saudável.
+            </p>
 
-                <!-- Conteúdo -->
-                <div class="w-full md:w-1/2">
+            <!-- Botões -->
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#contato"
+                class="rounded-lg bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-200"
+              >
+                Começar agora
+              </a>
 
-                    <p class="text-sm font-semibold uppercase tracking-widest text-gray-400">
-                        Personal Trainer
-                    </p>
-
-                    <h1 class="mt-4 text-5xl md:text-6xl font-bold leading-tight">
-                        Transforme seu corpo.
-                        <span class="text-gray-400">
-                            Supere seus limites.
-                        </span>
-                    </h1>
-
-                    <p class="mt-6 text-lg text-gray-300 max-w-lg">
-                        Treinamento personalizado para ajudar você
-                        a alcançar seus objetivos e construir uma rotina
-                        mais saudável.
-                    </p>
-
-                    <!-- Botões -->
-                    <div class="mt-8 flex flex-wrap gap-4">
-
-                        <a href="#contato"
-                            class="rounded-lg bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-200">
-                            Começar agora
-                        </a>
-
-                        <a href="#metodo"
-                            class="rounded-lg border border-white px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-black">
-                            Conheça o método
-                        </a>
-
-                    </div>
-
-                    <!-- Números -->
-                    <div class="mt-12 flex gap-12">
-
-                        <div>
-                            <p class="text-3xl font-bold">2+</p>
-                            <p class="text-sm text-gray-400">
-                                anos de experiência
-                            </p>
-                        </div>
-
-                        <div>
-                            <p class="text-3xl font-bold">500+</p>
-                            <p class="text-sm text-gray-400">
-                                alunos transformados
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Imagem -->
-                <div class="w-full md:w-1/2">
-
-                    <div class="overflow-hidden rounded-2xl">
-                        <img src="img/personal.png" alt="Personal trainer durante um treinamento"
-                            class="h-[500px] w-full object-cover">
-                    </div>
-
-                </div>
-
+              <a
+                href="#metodo"
+                class="rounded-lg border border-white px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-black"
+              >
+                Conheça o método
+              </a>
             </div>
 
-        </div>
+            <!-- Números -->
+            <div class="mt-12 flex gap-12">
+              <div>
+                <p class="text-3xl font-bold">2+</p>
+                <p class="text-sm text-gray-400">anos de experiência</p>
+              </div>
 
+              <div>
+                <p class="text-3xl font-bold">200+</p>
+                <p class="text-sm text-gray-400">alunos transformados</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagem -->
+          <div class="w-full md:w-1/2">
+            <div class="overflow-hidden rounded-2xl">
+              <img
+                src="img/personal.png"
+                alt="Personal trainer tirando foto no espelho"
+                class="h-[500px] w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-</body>
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="bg-white text-black">
+      <div class="container mx-auto px-6 py-24">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Imagem -->
+          <div class="w-full md:w-1/2">
+            <div class="overflow-hidden rounded-2xl">
+              <img
+                src="img/personal2.png"
+                alt="Personal Trainer"
+                class="h-[500px] w-full object-cover"
+              />
+            </div>
+          </div>
 
+          <!-- Conteúdo -->
+          <div class="w-full md:w-1/2">
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+            >
+              Sobre mim
+            </p>
+
+            <h2 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+              Mais do que treinos. Uma mudança de estilo de vida.
+            </h2>
+
+            <p class="mt-6 text-lg text-gray-600 max-w-lg">
+              Meu objetivo é ajudar cada aluno a alcançar sua melhor versão
+              através de treinos personalizados e acompanhamento próximo.
+            </p>
+
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                <span class="text-gray-800">Treinos personalizados</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                <span class="text-gray-800">Acompanhamento individual</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                <span class="text-gray-800">Foco em resultados</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTODO / PROCESSO -->
+    <section id="metodo" class="bg-black text-white">
+      <div class="container mx-auto px-6 py-24">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+          >
+            Método
+          </p>
+          <h2 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+            Um processo simples, pensado para durar.
+          </h2>
+          <p class="mt-6 text-lg text-gray-300">
+            Nada de planilha genérica. Cada etapa existe para te levar do ponto
+            em que você está até onde você quer chegar.
+          </p>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-4">
+          <div class="border-t border-gray-700 pt-6">
+            <p class="text-sm text-gray-500">01</p>
+            <h3 class="mt-3 text-xl font-bold">Avaliação inicial</h3>
+            <p class="mt-3 text-gray-400">
+              Entendo seu histórico, sua rotina e seus objetivos antes de montar
+              qualquer treino.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-700 pt-6">
+            <p class="text-sm text-gray-500">02</p>
+            <h3 class="mt-3 text-xl font-bold">Plano personalizado</h3>
+            <p class="mt-3 text-gray-400">
+              Monto um programa de treino sob medida, respeitando seu nível e
+              sua disponibilidade.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-700 pt-6">
+            <p class="text-sm text-gray-500">03</p>
+            <h3 class="mt-3 text-xl font-bold">Acompanhamento</h3>
+            <p class="mt-3 text-gray-400">
+              Ajusto cargas, exercícios e estratégia semana a semana, sempre
+              perto de você.
+            </p>
+          </div>
+
+          <div class="border-t border-gray-700 pt-6">
+            <p class="text-sm text-gray-500">04</p>
+            <h3 class="mt-3 text-xl font-bold">Evolução contínua</h3>
+            <p class="mt-3 text-gray-400">
+              Revisamos metas periodicamente para manter a evolução constante a
+              longo prazo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section id="planos" class="bg-white text-black">
+      <div class="container mx-auto px-6 py-24">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+          >
+            Planos
+          </p>
+          <h2 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+            Escolha o plano que combina com seu ritmo.
+          </h2>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <!-- Plano Mensal -->
+          <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+            <h3 class="text-xl font-bold">Mensal</h3>
+            <p class="mt-2 text-gray-500">Para quem quer experimentar.</p>
+
+            <p class="mt-8">
+              <span class="text-4xl font-bold">R$ 250</span>
+              <span class="text-gray-500">/mês</span>
+            </p>
+
+            <ul class="mt-8 flex-1 space-y-3 text-gray-700">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                4 treinos por semana
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                Acompanhamento via WhatsApp
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                Ajuste mensal de plano
+              </li>
+            </ul>
+
+            <a
+              href="#contato"
+              class="mt-10 rounded-lg border border-black px-6 py-3 text-center font-semibold text-black transition hover:bg-black hover:text-white"
+            >
+              Escolher plano
+            </a>
+          </div>
+
+          <!-- Plano Trimestral (destaque) -->
+          <div class="flex flex-col rounded-2xl bg-black p-8 text-white">
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+            >
+              Mais escolhido
+            </p>
+            <h3 class="mt-2 text-xl font-bold">Trimestral</h3>
+            <p class="mt-2 text-gray-400">Para consolidar resultados.</p>
+
+            <p class="mt-8">
+              <span class="text-4xl font-bold">R$ 210</span>
+              <span class="text-gray-400">/mês</span>
+            </p>
+
+            <ul class="mt-8 flex-1 space-y-3 text-gray-300">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-white"></span>
+                5 treinos por semana
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-white"></span>
+                Acompanhamento diário
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-white"></span>
+                Ajuste quinzenal de plano
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-white"></span>
+                Orientação nutricional básica
+              </li>
+            </ul>
+
+            <a
+              href="#contato"
+              class="mt-10 rounded-lg bg-white px-6 py-3 text-center font-semibold text-black transition hover:bg-gray-200"
+            >
+              Escolher plano
+            </a>
+          </div>
+
+          <!-- Plano Semestral -->
+          <div class="flex flex-col rounded-2xl border border-gray-200 p-8">
+            <h3 class="text-xl font-bold">Semestral</h3>
+            <p class="mt-2 text-gray-500">Para quem pensa a longo prazo.</p>
+
+            <p class="mt-8">
+              <span class="text-4xl font-bold">R$ 180</span>
+              <span class="text-gray-500">/mês</span>
+            </p>
+
+            <ul class="mt-8 flex-1 space-y-3 text-gray-700">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                5 treinos por semana
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                Acompanhamento diário
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                Ajuste semanal de plano
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 shrink-0 rounded-full bg-black"></span>
+                Orientação nutricional completa
+              </li>
+            </ul>
+
+            <a
+              href="#contato"
+              class="mt-10 rounded-lg border border-black px-6 py-3 text-center font-semibold text-black transition hover:bg-black hover:text-white"
+            >
+              Escolher plano
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+
+    <section id="resultados" class="bg-black text-white">
+      <div class="container mx-auto px-6 py-24">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+          >
+            Resultados
+          </p>
+
+          <h2 class="mt-4 text-4xl font-bold leading-tight md:text-5xl">
+            Progresso real, aluno por aluno.
+          </h2>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3">
+          <!-- CARD RESULTADO 1 -->
+
+          <div class="overflow-hidden rounded-2xl bg-white text-black">
+            <div class="grid grid-cols-2">
+              <!-- Antes -->
+              <div class="h-64 overflow-hidden border-r border-gray-200">
+                <img
+                  src="img/jojoAntes.PNG"
+                  alt="Jordana antes do treinamento"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <!-- Depois -->
+              <div class="h-64 overflow-hidden">
+                <img
+                  src="img/jojoDepois.jpg"
+                  alt="Jordana depois do treinamento"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div class="p-6">
+              <p class="font-bold">Jordana, 29 anos</p>
+
+              <p class="mt-1 text-sm text-gray-500">
+                -12kg em 5 meses de acompanhamento
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD RESULTADO 2 -->
+
+          <div class="overflow-hidden rounded-2xl bg-white text-black">
+            <div class="grid grid-cols-2">
+              <!-- Antes -->
+              <div class="h-64 overflow-hidden border-r border-gray-200">
+                <img
+                  src="img/viniJrAntes.jpg"
+                  alt="Vinicius antes do treinamento"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <!-- Depois -->
+              <div class="h-64 overflow-hidden">
+                <img
+                  src="img/viniJrDepois.jpg"
+                  alt="Vinicius depois do treinamento"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div class="p-6">
+              <p class="font-bold">Vinicius, 26 anos</p>
+
+              <p class="mt-1 text-sm text-gray-500">
+                +6kg de massa magra em 8 meses
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD RESULTADO 3 -->
+
+          <div class="overflow-hidden rounded-2xl bg-white text-black">
+            <div class="grid grid-cols-2">
+              <!-- Antes -->
+              <div class="h-64 overflow-hidden border-r border-gray-200">
+                <img
+                  src="img/deRoquiAntes.jpg"
+                  alt="Dwayne antes do treinamento"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <!-- Depois -->
+              <div class="h-64 overflow-hidden">
+                <img
+                  src="img/deRoquiDepois.jpg"
+                  alt="Dwayne depois do treinamento"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div class="p-6">
+              <p class="font-bold">Dwayne, 54 anos</p>
+
+              <p class="mt-1 text-sm text-gray-500">
+                -9kg e pressão arterial controlada
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="bg-white text-black">
+      <div class="container mx-auto px-6 py-24">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+          >
+            Depoimentos
+          </p>
+          <h2 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+            Quem treina comigo, conta como foi.
+          </h2>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div class="rounded-2xl border border-gray-200 p-8">
+            <p class="text-lg text-gray-700">
+              "Comecei sem nenhuma disciplina e hoje treino 5 vezes por semana
+              sem esforço. O acompanhamento próximo fez toda a diferença."
+            </p>
+            <div class="mt-8 flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white font-bold"
+              >
+                JJ
+              </div>
+              <div>
+                <p class="font-bold">Jordana Gleise</p>
+                <p class="text-sm text-gray-500">Aluna há 8 meses</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-gray-200 p-8">
+            <p class="text-lg text-gray-700">
+              "Os treinos são pensados pra minha rotina corrida. Nunca travei em
+              um platô porque o plano muda comigo."
+            </p>
+            <div class="mt-8 flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white font-bold"
+              >
+                VJR
+              </div>
+              <div>
+                <p class="font-bold">Vinicius Jr</p>
+                <p class="text-sm text-gray-500">Aluno há 1 ano</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-gray-200 p-8">
+            <p class="text-lg text-gray-700">
+              "Depois dos 40, achei que não teria mais resultado. Em poucos
+              meses meus exames já mostravam a diferença."
+            </p>
+            <div class="mt-8 flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white font-bold"
+              >
+                DJ
+              </div>
+              <div>
+                <p class="font-bold">Dwayne Johnson</p>
+                <p class="text-sm text-gray-500">Aluno há 5 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-black text-white">
+      <div class="container mx-auto px-6 py-24">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+          >
+            Perguntas frequentes
+          </p>
+          <h2 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+            Ainda com dúvidas?
+          </h2>
+        </div>
+
+        <div class="mt-16 max-w-3xl divide-y divide-gray-800">
+          <details class="group py-6">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between font-semibold"
+            >
+              Preciso já ter experiência com treino?
+              <span class="ml-4 text-gray-500 transition group-open:rotate-45"
+                >+</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-400">
+              Não. Os treinos são montados a partir do seu nível atual, então
+              funcionam tanto para iniciantes quanto para quem já treina há
+              anos.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between font-semibold"
+            >
+              O acompanhamento é presencial ou online?
+              <span class="ml-4 text-gray-500 transition group-open:rotate-45"
+                >+</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-400">
+              Trabalho com acompanhamento online, com ajustes de treino e
+              contato direto pelo WhatsApp durante toda a semana.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between font-semibold"
+            >
+              Em quanto tempo vejo resultado?
+              <span class="ml-4 text-gray-500 transition group-open:rotate-45"
+                >+</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-400">
+              Varia de pessoa para pessoa, mas a maioria dos alunos já percebe
+              mudanças de disposição e desempenho nas primeiras semanas, com
+              resultados visuais a partir do segundo mês.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between font-semibold"
+            >
+              Posso cancelar ou trocar de plano?
+              <span class="ml-4 text-gray-500 transition group-open:rotate-45"
+                >+</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-400">
+              Sim, os planos podem ser ajustados ou cancelados a qualquer
+              momento, sem multa ou burocracia.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="bg-white text-black">
+      <div class="container mx-auto px-6 py-24 text-center">
+        <h2
+          class="mx-auto max-w-2xl text-4xl md:text-5xl font-bold leading-tight"
+        >
+          Sua melhor versão começa no próximo treino.
+        </h2>
+        <p class="mx-auto mt-6 max-w-lg text-lg text-gray-600">
+          Fale comigo agora e monte seu plano de treino personalizado.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            href="#contato"
+            class="rounded-lg bg-black px-8 py-4 font-semibold text-white transition hover:bg-gray-800"
+          >
+            Quero começar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO / FOOTER -->
+    <footer id="contato" class="bg-black text-white">
+      <div class="container mx-auto px-6 py-16">
+        <div class="flex flex-col gap-12 md:flex-row md:justify-between">
+          <div class="max-w-sm">
+            <p class="text-xl font-bold">Guilherme Personal</p>
+            <p class="mt-4 text-gray-400">
+              Treinamento personalizado para quem quer resultado de verdade, com
+              acompanhamento próximo em cada etapa.
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+            >
+              Navegação
+            </p>
+            <ul class="mt-4 space-y-2 text-gray-300">
+              <li><a href="#inicio" class="hover:text-white">Início</a></li>
+              <li><a href="#sobre" class="hover:text-white">Sobre mim</a></li>
+              <li><a href="#metodo" class="hover:text-white">Método</a></li>
+              <li><a href="#planos" class="hover:text-white">Planos</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+            >
+              Contato
+            </p>
+            <ul class="mt-4 space-y-2 text-gray-300">
+              <li>
+                <a href="https://wa.me/5581985628287" class="hover:text-white">
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white">
+                  guilhermeandrade2908@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-16 flex flex-col gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 md:flex-row md:justify-between"
+        >
+          <p>© 2026 Guilherme Personal. Todos os direitos reservados.</p>
+          <p>CREF 000000-G/PE</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menuMobile = document.getElementById("menu-mobile");
+      menuBtn.addEventListener("click", () => {
+        menuMobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
